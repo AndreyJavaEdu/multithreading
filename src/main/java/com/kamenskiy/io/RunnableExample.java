@@ -18,6 +18,9 @@ public class RunnableExample implements Runnable {
         Thread thread5 = new Thread(new RunnableExample("thread5"));
         Thread thread6 = new Thread(new RunnableExample("thread6"));
         Thread thread7 = new Thread(new RunnableExample("thread7"));
+        thread1.setPriority(Thread.MAX_PRIORITY);
+        thread2.setPriority(Thread.MIN_PRIORITY);
+        thread3.setPriority(9);
         thread1.start();
         thread2.start();
         thread3.start();
